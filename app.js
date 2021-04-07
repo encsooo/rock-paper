@@ -1,13 +1,3 @@
-const express = require('express')
-const app = express()
-
-app.get("/", (req, res, next) => {
-  res.send("Hey, this deploy thing MUST work! Otherwise I quit this job...")
-})
-
-let PORT = process.env.PORT || 5000
-app.listen(PORT, () => console.log(`API up and running on port ${PORT}`))
-
 
 let userScore = 0;
 let computerScore = 0;
